@@ -2,10 +2,10 @@ import Button from '../components/Button';
 import Icon from '../components/Icon';
 import PageHero from '../components/PageHero';
 import { SHOP_LINK } from '../data';
-import usePageTitle from '../hooks/usePageTitle';
+import useSeo from '../hooks/useSeo';
 
 export default function Offers() {
-  usePageTitle('Offers | WellMart Kasaragod');
+  useSeo({ title: 'Offers | WellMart Kasaragod', description: 'Ask WellMart Kasaragod for current prices.', index: false });
   return (
     <main>
       <PageHero

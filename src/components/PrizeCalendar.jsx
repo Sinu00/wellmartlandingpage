@@ -76,7 +76,7 @@ export default function PrizeCalendar() {
           if (!desktop) {
             gsap.from('.month', {
               y: 40,
-              autoAlpha: 0,
+              opacity: 0,
               duration: 0.9,
               ease: 'power3.out',
               stagger: 0.1,
@@ -121,9 +121,9 @@ export default function PrizeCalendar() {
           <div>
             <p className="eyebrow">Prize calendar</p>
             <h2>
-              Four months. Four draws.
+              WellMart Winners Club prizes.
               <br />
-              Each one bigger than the last.
+              Four months. Four draws.
             </h2>
             <p>
               Every month has its own headline prize plus gold coins, 5G phones, cash and appliance kits. Month four is

@@ -2,10 +2,14 @@ import Button from '../components/Button';
 import Icon from '../components/Icon';
 import PageHero from '../components/PageHero';
 import { COMPANY, SHOP_LINK } from '../data';
-import usePageTitle from '../hooks/usePageTitle';
+import useSeo from '../hooks/useSeo';
 
 export default function About() {
-  usePageTitle('About WellMart | Kasaragod showroom');
+  useSeo({
+    title: 'About WellMart | Kasaragod showroom',
+    description: 'WellMart Winners Club LLP, Golden Arcade, New Bus Stand, Kasaragod.',
+    index: false,
+  });
   return (
     <main>
       <PageHero

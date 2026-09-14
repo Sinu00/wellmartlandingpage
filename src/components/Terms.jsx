@@ -10,7 +10,7 @@ export default function Terms() {
       <div className="wrap terms-grid">
         <div className="sticky rv">
           <p className="eyebrow">Terms &amp; conditions</p>
-          <h2 className="terms-title">The rules, in plain words.</h2>
+          <h2 className="terms-title">WellMart Winners Club terms, in plain words.</h2>
           <p>
             Please read these before you join. Payments are non-refundable, and only members who complete all four
             months are eligible for prizes.

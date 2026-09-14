@@ -7,10 +7,14 @@ import { FEATURED } from '../data/products';
 import showroom from '../assets/products/hero-showroom.png';
 import sofa from '../assets/products/sofa.png';
 import tv from '../assets/products/tv.png';
-import usePageTitle from '../hooks/usePageTitle';
+import useSeo from '../hooks/useSeo';
 
 export default function Home() {
-  usePageTitle('WellMart | Furniture and electronics, Kasaragod');
+  useSeo({
+    title: 'WellMart | Furniture and electronics, Kasaragod',
+    description: 'WellMart showroom at Golden Arcade, New Bus Stand, Kasaragod.',
+    index: false,
+  });
   return (
     <main>
       <section className="shop-hero">

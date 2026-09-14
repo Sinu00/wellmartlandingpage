@@ -1,6 +1,6 @@
 import Button from './Button';
 import Icon from './Icon';
-import { COMPANY, JOIN_LINK, TOTAL_WINNERS } from '../data';
+import { COMPANY, JOIN_LINK } from '../data';
 
 export default function Contact() {
   return (
@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="wrap">
         <div className="rv">
           <p className="eyebrow">Join from Kasaragod or anywhere</p>
-          <h2>Ready to be one of the {TOTAL_WINNERS}?</h2>
+          <h2>Join WellMart Winners Club in Kasaragod.</h2>
           <p className="lede">
             Message us on WhatsApp or call the office. We will confirm the official payment details and add you to the
             member updates.

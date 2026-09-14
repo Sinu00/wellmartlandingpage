@@ -25,7 +25,7 @@ export default function Hero({ play }) {
       const introEls = gsap.utils.toArray('[data-intro]').filter((el) => el.tagName !== 'H1');
 
       tl.from('.line > span', { yPercent: 110, duration: 0.9, ease: 'power4.out', stagger: 0.09 }, 0)
-        .from(introEls, { y: 26, autoAlpha: 0, duration: 0.8, ease: 'power3.out', stagger: 0.08 }, 0.15)
+        .from(introEls, { y: 26, opacity: 0, duration: 0.8, ease: 'power3.out', stagger: 0.08 }, 0.15)
         .from('.hero-art', { scale: 0.8, autoAlpha: 0, duration: 1.1, ease: 'power3.out' }, 0.1)
         .from('.orb', { scale: 0, duration: 0.7, ease: 'back.out(2)', stagger: 0.08 }, 0.5);
       intro.current = tl;
@@ -54,7 +54,7 @@ export default function Hero({ play }) {
       <div className="wrap">
         <div className="hero-copy">
           <p className="eyebrow" data-intro>
-            Kasaragod · {MONTH_COUNT}-month lucky draw · {TOTAL_WINNERS} winners
+            Kasaragod · WellMart Winners Club · {MONTH_COUNT}-month lucky draw · {TOTAL_WINNERS} winners
           </p>
           <h1 data-intro>
             <span className="line">

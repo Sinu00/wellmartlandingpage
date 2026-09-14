@@ -2,10 +2,14 @@ import Button from '../components/Button';
 import Icon from '../components/Icon';
 import PageHero from '../components/PageHero';
 import { COMPANY, EMI_LINK } from '../data';
-import usePageTitle from '../hooks/usePageTitle';
+import useSeo from '../hooks/useSeo';
 
 export default function Emi() {
-  usePageTitle('Monthly payments | WellMart Kasaragod');
+  useSeo({
+    title: 'Monthly payments | WellMart Kasaragod',
+    description: 'Ask WellMart in Kasaragod about monthly payments.',
+    index: false,
+  });
   return (
     <main>
       <PageHero

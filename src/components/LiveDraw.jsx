@@ -51,7 +51,7 @@ export default function LiveDraw() {
       <div className="wrap">
         <div className="section-head rv">
           <p className="eyebrow">Transparent by design</p>
-          <h2>Every draw happens in front of you.</h2>
+          <h2>Every WellMart Winners Club draw happens in front of you.</h2>
         </div>
         <div className="live-grid">
           <div className="live-card main rv">

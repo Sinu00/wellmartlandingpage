@@ -11,7 +11,7 @@ export default function HowItWorks() {
       if (prefersReducedMotion()) return;
       gsap.from('.step', {
         y: 50,
-        autoAlpha: 0,
+        opacity: 0,
         duration: 0.9,
         ease: 'power3.out',
         stagger: 0.12,
@@ -26,7 +26,7 @@ export default function HowItWorks() {
       <div className="wrap">
         <div className="section-head rv">
           <p className="eyebrow">How it works</p>
-          <h2>Three steps between you and the draw.</h2>
+          <h2>How WellMart Winners Club works.</h2>
           <p>
             The plan runs for four months. Stay paid up and you are automatically entered into every monthly draw,
             including the bumper draw in month four.

@@ -1,9 +1,13 @@
 import PageHero from '../components/PageHero';
 import ProductGrid from '../components/ProductGrid';
-import usePageTitle from '../hooks/usePageTitle';
+import useSeo from '../hooks/useSeo';
 
 export default function Electronics() {
-  usePageTitle('Electronics | WellMart Kasaragod');
+  useSeo({
+    title: 'Electronics | WellMart Kasaragod',
+    description: 'Electronics at WellMart, Kasaragod.',
+    index: false,
+  });
   return (
     <main>
       <PageHero

@@ -1,9 +1,9 @@
 import PageHero from '../components/PageHero';
 import ProductGrid from '../components/ProductGrid';
-import usePageTitle from '../hooks/usePageTitle';
+import useSeo from '../hooks/useSeo';
 
 export default function Furniture() {
-  usePageTitle('Furniture | WellMart Kasaragod');
+  useSeo({ title: 'Furniture | WellMart Kasaragod', description: 'Furniture at WellMart, Kasaragod.', index: false });
   return (
     <main>
       <PageHero

@@ -10,10 +10,11 @@ import LiveDraw from '../components/LiveDraw';
 import FullPaymentOffer from '../components/FullPaymentOffer';
 import Terms from '../components/Terms';
 import Contact from '../components/Contact';
-import usePageTitle from '../hooks/usePageTitle';
+import useSeo from '../hooks/useSeo';
+import { CLUB_DESCRIPTION, CLUB_TITLE } from '../seo';
 
 export default function WinnersClub() {
-  usePageTitle('WellMart Winners Club | Kasaragod');
+  useSeo({ title: CLUB_TITLE, description: CLUB_DESCRIPTION, index: true, club: true });
   const reduce = prefersReducedMotion();
   const [loading, setLoading] = useState(!reduce);
   const [introPlaying, setIntroPlaying] = useState(reduce);
@@ -25,7 +26,7 @@ export default function WinnersClub() {
         gsap.utils.toArray('.rv').forEach((el) =>
           gsap.from(el, {
             y: 40,
-            autoAlpha: 0,
+            opacity: 0,
             duration: 1,
             ease: 'power3.out',
             scrollTrigger: { trigger: el, start: 'top 88%', once: true },
