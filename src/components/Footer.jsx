@@ -1,4 +1,4 @@
-import logo from '../assets/logo-white.png';
+import logo from '../assets/logo-pink.png';
 import Icon from './Icon';
 import { COMPANY, JOIN_LINK } from '../data';
 

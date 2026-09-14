@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { prefersReducedMotion } from '../lib/gsap';
 
-const SHARD_COLORS = ['#E91D6E', '#FF5FA2', '#FFFFFF', '#F5C76A'];
+const SHARD_COLORS = ['#E91D6E', '#FF5FA2', '#C9922E', '#F5C76A'];
 
 /** Gold coins and pink confetti drifting upward, with gentle pointer parallax. */
 export default function ConfettiCanvas() {
