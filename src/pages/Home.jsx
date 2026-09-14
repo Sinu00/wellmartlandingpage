@@ -117,15 +117,17 @@ export default function Home() {
       </section>
 
       <section className="section club-note">
-        <div className="wrap club-note-card">
-          <div>
-            <h2>WellMart also runs a member savings scheme.</h2>
-            <p>The Winners Club is a separate 4-month plan with monthly draws. Read the terms before you join.</p>
+        <div className="wrap">
+          <div className="club-note-card">
+            <div>
+              <h2>WellMart also runs a member savings scheme.</h2>
+              <p>The Winners Club is a separate 4-month plan with monthly draws. Read the terms before you join.</p>
+            </div>
+            <Button to="/winners-club" variant="ghost">
+              Winners Club
+              <Icon name="arrow" />
+            </Button>
           </div>
-          <Button to="/winners-club" variant="ghost">
-            Winners Club
-            <Icon name="arrow" />
-          </Button>
         </div>
       </section>
     </main>
