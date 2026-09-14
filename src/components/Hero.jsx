@@ -5,6 +5,7 @@ import Button from './Button';
 import Icon from './Icon';
 import bag from '../assets/bag-white.png';
 import { JOIN_LINK, MONTHLY_FEE, MONTH_COUNT, PLAN_TOTAL, TOTAL_WINNERS, formatINR } from '../data';
+import { onScrollTo } from '../lib/scroll';
 
 const ORBS = [
   { cls: 'o1', label: <>1g<br />Gold</> },
@@ -82,7 +83,7 @@ export default function Hero({ play }) {
               Join the club
               <Icon name="arrow" />
             </Button>
-            <Button href="#prizes" variant="ghost">
+            <Button href="#/winners-club" variant="ghost" onClick={onScrollTo('prizes')}>
               See all prizes
             </Button>
           </div>

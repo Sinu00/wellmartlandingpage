@@ -11,6 +11,8 @@ export const COMPANY = {
 };
 
 const whatsapp = (text) => `https://wa.me/919061133123?text=${encodeURIComponent(text)}`;
+export const SHOP_LINK = whatsapp('Hi WellMart, I want to know about furniture and electronics');
+export const EMI_LINK = whatsapp('Hi WellMart, I want to ask about monthly payments');
 export const JOIN_LINK = whatsapp('Hi WellMart, I want to join the Winners Club');
 export const FULL_PAY_LINK = whatsapp('Hi WellMart, I want to pay the full ₹2,000 for the Winners Club');
 

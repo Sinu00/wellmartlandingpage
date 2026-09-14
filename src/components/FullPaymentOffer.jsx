@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { gsap, useGSAP, prefersReducedMotion } from '../lib/gsap';
 import Button from './Button';
 import { FULL_PAY_LINK, PLAN_TOTAL, formatINR } from '../data';
+import { onScrollTo } from '../lib/scroll';
 
 export default function FullPaymentOffer() {
   const ref = useRef(null);
@@ -38,7 +39,7 @@ export default function FullPaymentOffer() {
               <Button href={FULL_PAY_LINK} variant="gold" external>
                 Ask about full payment
               </Button>
-              <Button href="#terms" variant="ghost">
+              <Button href="#/winners-club" variant="ghost" onClick={onScrollTo('terms')}>
                 Read the terms
               </Button>
             </div>
